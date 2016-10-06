@@ -18,133 +18,127 @@ var comments = document.querySelector(".comments");
 
 open_comm.addEventListener("click", function(def) {
     def.preventDefault();
-	comments.classList.remove("none");
-	open_comm.classList.add("active");
+    comments.classList.remove("none");
+    open_comm.classList.add("active");
 })
 
 close_comm.addEventListener("click", function(def) {
     def.preventDefault();
-	comments.classList.add("none");
-	open_comm.classList.remove("active");
+    comments.classList.add("none");
+    open_comm.classList.remove("active");
 })
 
 pink.addEventListener("change", function(def) {
     def.preventDefault();
-    phone.setAttribute("name", "pink");
-	description.setAttribute("name", "pink");
-	specification.setAttribute("name", "pink");
-})
-
-pink.addEventListener("change", function(def) {
-    def.preventDefault();
-    phone.setAttribute("name", "pink");
-	description.setAttribute("name", "pink");
-	specification.setAttribute("name", "pink");
+    phone.setAttribute("id", "pink");
+    description.setAttribute("id", "pink");
+    specification.setAttribute("id", "pink");
 })
 
 yellow.addEventListener("change", function(def) {
     def.preventDefault();
-    phone.setAttribute("name", "yellow");
-	description.setAttribute("name", "yellow");
-	specification.setAttribute("name", "yellow");
+    phone.setAttribute("id", "yellow");
+    description.setAttribute("id", "yellow");
+    specification.setAttribute("id", "yellow");
 })
 
 black.addEventListener("change", function(def) {
     def.preventDefault();
-    phone.setAttribute("name", "black");
-	description.setAttribute("name", "black");
-	specification.setAttribute("name", "black");
+    phone.setAttribute("id", "black");
+    description.setAttribute("id", "black");
+    specification.setAttribute("id", "black");
 })
 
 green.addEventListener("change", function(def) {
     def.preventDefault();
-    phone.setAttribute("name", "green");
-	description.setAttribute("name", "green");
-	specification.setAttribute("name", "green");
+    phone.setAttribute("id", "green");
+    description.setAttribute("id", "green");
+    specification.setAttribute("id", "green");
 })
 
 red.addEventListener("change", function(def) {
     def.preventDefault();
-    phone.setAttribute("name", "red");
-	description.setAttribute("name", "red");
-	specification.setAttribute("name", "red");
+    phone.setAttribute("id", "red");
+    description.setAttribute("id", "red");
+    specification.setAttribute("id", "red");
 })
 
 blue.addEventListener("change", function(def) {
     def.preventDefault();
-    phone.setAttribute("name", "blue");
- 	description.setAttribute("name", "blue");	
-	specification.setAttribute("name", "blue");	   
+    phone.setAttribute("id", "blue");
+    description.setAttribute("id", "blue");
+    specification.setAttribute("id", "blue");
 })
 
-$(function(){
+$(function() {
     $(window).scroll(function() {
-        if($(this).scrollTop() >= 172) {
+        if ($(this).scrollTop() >= 172) {
             $('.doogee-nav').addClass('stickytop');
-        }
-        else{
+        } else {
             $('.doogee-nav').removeClass('stickytop');
         }
     });
 });
 
-$(function(){
+$(function() {
     $(window).scroll(function() {
-        if($(this).scrollTop() >= 600) {
+        if ($(this).scrollTop() >= 600) {
             $('.spec-btn').addClass('active');
-			$('.spec-left-block').addClass('to-right');
+            $('.spec-left-block').addClass('to-right');
             $('.spec-right-block').addClass('to-left');
-        }
-        else{
+        } else {
             $('.spec-btn').removeClass('active');
         }
     });
 });
 
-$(function(){
+$(function() {
     $(window).scroll(function() {
-        if($(this).scrollTop() >= 1200) {
+        if ($(this).scrollTop() >= 1200) {
             $('.video-btn').addClass('active');
             $('.spec-btn').removeClass('active');
-			$('.screen-left-block').addClass('to-right');
+            $('.screen-left-block').addClass('to-right');
             $('.screen-right-block').addClass('to-left');
-        }
-        else{
+        } else {
             $('.video-btn').removeClass('active');
         }
     });
 });
 
-$(function(){
+$(function() {
     $(window).scroll(function() {
-        if($(this).scrollTop() >= 2000) {
+        if ($(this).scrollTop() >= 2000) {
             $('.video-btn').removeClass('active');
-			$('.core-left-block').addClass('to-right');
+            $('.core-left-block').addClass('to-right');
             $('.core-right-block').addClass('to-left');
-        }
-        else{
-        }
+        } else {}
     });
 });
 
-$(function(){
+$(function() {
     $(window).scroll(function() {
-        if($(this).scrollTop() >= 2300) {
-			$('.gestures-left-block').addClass('to-right');
+        if ($(this).scrollTop() >= 2300) {
+            $('.gestures-left-block').addClass('to-right');
             $('.gestures-right-block').addClass('to-left');
-        }
-        else{
-        }
+        } else {}
     });
 });
 
-$(function(){
+$(function() {
     $(window).scroll(function() {
-        if($(this).scrollTop() >= 3000) {
-			$('.online-left-block').addClass('to-right');
+        if ($(this).scrollTop() >= 3000) {
+            $('.online-left-block').addClass('to-right');
             $('.online-right-block').addClass('to-left');
-        }
-        else{
+        } else {}
+    });
+});
+
+$(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 3600) {
+            $('.accessories-btn').addClass('active');
+        } else {
+            $('.accessories-btn').removeClass('active');
         }
     });
 });
@@ -152,23 +146,16 @@ $(function(){
 first_btn.addEventListener("click", function(def) {
     def.preventDefault();
     first_bl.classList.add("none");
-	second_bl.classList.remove("none");
+    second_bl.classList.remove("none");
 })
 
 second_btn.addEventListener("click", function(def) {
     def.preventDefault();
     second_bl.classList.add("none");
-	first_bl.classList.remove("none");
+    first_bl.classList.remove("none");
 })
 
 nav_btn.addEventListener("click", function(def) {
     first_bl.classList.add("none");
-	second_bl.classList.remove("none");
+    second_bl.classList.remove("none");
 })
-
-
-
-
-
-
-
